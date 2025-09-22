@@ -34,7 +34,7 @@ const navItems = [
   { name: "Home", path: "/", icon: <FaHome /> },
   { name: "About", path: "/about", icon: <FaInfoCircle /> },
   { name: "Products", path: "/products", icon: <FaTruckMoving /> },
-  { name: "Gallery", path: "/gallery", icon: <FaEnvelope /> },
+  { name: "Services", path: "/services", icon: <FaEnvelope /> },
   { name: "Contact", path: "/contact", icon: <FaPhoneAlt /> },
   { name: "Certificates", path: "/certificates", icon: <FaCertificate /> },
 ];
@@ -126,7 +126,7 @@ const ModernNavbar = () => {
           position: "relative",
           zIndex: 50,
         }}
-        className="w-full px-4 md:px-12"
+        className="w-full py-2 px-4 md:px-12"
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo Left */}
