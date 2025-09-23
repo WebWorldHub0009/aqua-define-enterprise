@@ -17,22 +17,21 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import VisitorCounter from "./VisitorCounter";
 import Translator from "./Translator";
-import bgFooter from "../assets/home/bg.jpg"; 
+import bgFooter from "../assets/home/bg.jpg";
 
 const colors = {
   deepBlue: "#003B73", // Primary
   aquaCyan: "#00C2CB", // Secondary
   turquoise: "#3DD6D0", // Accent
-  whitePure: "#FFFFFF", 
+  whitePure: "#FFFFFF",
   softGray: "#D9D9D9",
 };
 
+// ✅ Now products only Domestic, Commercial, Industrial
 const products = [
-  { title: "Water Purifiers", slug: "water-purifiers" },
-  { title: "Commercial RO Plants", slug: "commercial-ro-plants" },
-  { title: "Industrial Solutions", slug: "industrial-solutions" },
-  { title: "Spare Parts", slug: "spare-parts" },
-  { title: "Maintenance Services", slug: "maintenance-services" },
+  { title: "Domestic Products", slug: "domestic" },
+  { title: "Commercial Products", slug: "commercial" },
+  { title: "Industrial Products", slug: "industrial" },
 ];
 
 export default function Footer() {
@@ -149,8 +148,9 @@ export default function Footer() {
             {products.map(({ title, slug }, i) => (
               <li key={i} className="flex items-center gap-2">
                 <FaTruckMoving style={{ color: colors.aquaCyan }} />
+                {/* 👉 All products link to Contact Page */}
                 <Link
-                  to={`/products/${slug}`}
+                  to={`/products`}
                   className="text-whitePure hover:text-aquaCyan transition duration-300"
                 >
                   {title}
@@ -207,11 +207,9 @@ export default function Footer() {
             </a>
           </p>
 
-
           <div className="mb-4 flex justify-start items-center">
             <div>
-
-            <Translator />
+              <Translator />
             </div>
           </div>
         </div>

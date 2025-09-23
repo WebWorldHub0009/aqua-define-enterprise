@@ -86,7 +86,7 @@ export default function HeroAquaDefineEnhanced() {
 </p>
 
           <div className="flex flex-wrap gap-4">
-            <Link to='/product'>
+            <Link to='/products'>
             <button className="px-8 py-3 bg-[#003B73] cursor-pointer text-white rounded-full font-semibold shadow-md hover:bg-[#00C2CB] transition">
               Explore Products
             </button>
