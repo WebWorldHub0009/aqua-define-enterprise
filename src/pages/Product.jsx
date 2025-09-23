@@ -17,8 +17,8 @@ import d9 from "../assets/product/8.png";
 import d10 from "../assets/product/9.png";
 import d11 from "../assets/product/10.png";
 import d12 from "../assets/product/11.png";
-import d13 from "../assets/product/i1.png";
-import d14 from "../assets/product/i2.png";
+import d13 from "../assets/product/a1.png";
+import d14 from "../assets/product/a2.png";
 import d15 from "../assets/product/c1.png";
 
 // Product Data with images + pricing + specs
